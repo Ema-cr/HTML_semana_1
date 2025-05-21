@@ -11,62 +11,83 @@
     </style>
 </header>
 <body>
-    <nav>
         <a href="https://riwi.io/?gad_source=1&gad_campaignid=22557917681&gclid=EAIaIQobChMIytaikKqyjQMVQYZaBR0rqTP5EAAYASAAEgImefD_BwE"target=_blank><img src="https://riwi.io/wp-content/uploads/2023/07/Fondo-claro-logo2-1.png" alt="logo" width="200" height="60"></header></a>
     <style>
     nav{background-color:azure}
     </style>
-    </nav>
     
     <main>
         <label>Nombre: <input name="nombre" placeholder="name" required></label><br>
         <label>Email:    <input name="Email" placeholder="email" required></label><br>
         <label>Edad: <input name="edad" placeholder="age" required></label><br>
-        <button>Enviar</button>
+        <button aria-label="Enviar" onclick="myDialog.close()">Enviar</button>
     </main>
 
     <aside>
         <h1>Video rapido de HTML</h1>
         <iframe width="300" height="215" src="https://www.youtube.com/embed/mNbnV3aN3KA?si=eT0STL6UZGkX9H45" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </aside>
-<img src="https://gatosyrespeto.org/wp-content/uploads/2022/05/dibujo.jpg" width="500" height="400"  usemap="#image-map" alt="gato">
+<img src="https://gatosyrespeto.org/wp-content/uploads/2022/05/dibujo.jpg" width="400" height="400"  usemap="#image-map" alt="gato">
 <map name="image-map">
-    <area shape="rect" coords="34,44,270,350" href="https://es.wikipedia.org/wiki/Historia_del_gato"target=_blank alt="Clickeable area">
-    <area shape="circle" coords="55,66,250" href="https://www.zooplus.es/magazine/gatos/salud-del-gato-y-cuidados/sobrepeso-en-gatos-causas-y-consecuencias"target=_blank alt="Another clickeable area">
+    <area shape="circle" coords="0,0,400" href="https://es.wikipedia.org/wiki/Historia_del_gato"target=_blank alt="Clickeable area">
+    <area shape="circle" coords="0,0,1000" href="https://www.zooplus.es/magazine/gatos/salud-del-gato-y-cuidados/sobrepeso-en-gatos-causas-y-consecuencias"target=_blank alt="Another clickeable area">
 </map>
-<table border="1">
+<article>
+    <style>
+        table{background-color: dodgerblue;}
+        table{border: 2px solid blueviolet;
+            border-radius: 10px;}
+    </style>
+    <caption><strong>Tabla de horarios en Riwi</strong></caption>
+<table style="width:10%", border="1">
     <tr>
         <th>Horarios</th>
         <th>Desarollo</th>
         <th>Review</th>
         <th>English</th>
-        <th>salida</th>
+        <th>Salida</th>
     </tr>
     <tr>
-        <td>Lunes</td>
-        <th>6 Am</th>
-        <th>9 Am</th>
-        <th>11 Am</th>
-        <th>2 Pm</th>
+        <th>Lunes</th>
+        <td>6 Am</td>
+        <td>9 Am</td>
+        <td>11 Am</td>
+        <td>2 Pm</td>
     </tr>
     <tr>
-        <td>Martes</td>
-        <th>6 Am</th>
-        <th>9 Am</th>
-        <th>11 Am</th>
-        <th>2 Pm</th>       
+        <th>Martes</th>
+        <td>6 Am</td>
+        <td>9 Am</td>
+        <td>11 Am</td>
+        <td>2 Pm</td>       
     </tr>
         <tr>
-        <td>Miercoles</td>
-        <th>6 Am</th>
-        <th>9 Am</th>
-        <th>11 Am</th>
-        <th>2 Pm</th>       
+        <th>Miercoles</th>
+        <td>6 Am</td>
+        <td>9 Am</td>
+        <td>11 Am</td>
+        <td>2 Pm</td>       
     </tr>
 </table>
-    <article>
-        
-    </article>
-<footer></footer>
+</article>
+<footer>
+<h2><strong>Listas</strong></h2>
+<ol>
+    <caption><strong>Temas para ver en:</strong></caption>
+    <li>Desarollo</li>
+    <ol>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+    </ol>
+    <li>Ingles</li>
+    <ul>
+        <li>Adjectives</li>
+        <li>Verbs</li>
+        <li>Pronunciation</li>
+    </ul>
+</ol>
+</footer>
 </body>
 </html>
