@@ -3,84 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página HTML</title>
-    <link rel="icon" href="Assets/pagina.png" type="image/x-icon">
+    <title>Semantic</title>       
 </head>
+<header><h1>Formulario</h1>
+    <style>
+        header{background-color: blueviolet;}
+    </style>
+</header>
 <body>
-<h1 class="titulo">Hola Mundo</h1>
-<p>Esta es mi primera pagina en HTML</p>
-<ul>
-    <li>Mango</li>
-    <li>Manzana</li>
-    <li>Uvas</li>
-</ul>
-<ol>
-    <li>Elige tu método de preparación:</li>
-    <li>Moler los granos de cafe</li>
-    <li>Calentar el agua</li>
-    <li>Preparar el cafe</li>
-    <li>Verter el agua</li>
-    <li>Dejar que el cafe se enfrie</li>
-    <li>Servir y disfrutar</li>
-</ol>
-<a href="https://www.google.com/" target="_blank">Google</a>
-<a href="contacto.html" target="_blank">Contacto</a><br>
-<a href="https://riwi.io/?gad_source=1&gad_campaignid=22557917681&gclid=EAIaIQobChMIytaikKqyjQMVQYZaBR0rqTP5EAAYASAAEgImefD_BwE"target=_blank><img src="https://riwi.io/wp-content/uploads/2023/07/Fondo-claro-logo2-1.png" alt="logo" width="200" height="60"></a><br>
-<a href="contacto.html">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" width="100" alt="Guasap"><br>
-<video width="420" height="400" controls>
-    <source src="/Media/4K 2K 1080p 720p 480p video resolution test.mp4" type="video/mp4">
-</video>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xOMMV_qXcQ8?si=Ny7NWjZAn7sWskgu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</a><br>
-<table style="height: auto;" width="10%" border="5">
-<style>
-    table{background-color: aqua;}
-    table{border: px solid black;
-        border-radius: 1%;}
-</style>
-<tr>
-    <th>Nombre</th>
-    <th>Edad</th>
-    <th>Ciudad</th>
-</tr>
-<tr>
-    <td>Emanuel</td>
-    <td>25</td>
-    <td>Medellin</td>
-</tr>
-<tr>
-    <td>Stiven</td>
-    <td>24</td>
-    <td>Venezuela</td>
-</tr>
-<tr>
-    <td>Santiago</td>
-    <td>24</td>
-    <td>Bolivia</td>
-</tr>
+        <a href="https://riwi.io/?gad_source=1&gad_campaignid=22557917681&gclid=EAIaIQobChMIytaikKqyjQMVQYZaBR0rqTP5EAAYASAAEgImefD_BwE"target=_blank><img src="https://riwi.io/wp-content/uploads/2023/07/Fondo-claro-logo2-1.png" alt="logo" width="200" height="60"></header></a>
+    <style>
+    nav{background-color:azure}
+    </style>
+    
+    <main>
+        <label>Nombre: <input name="nombre" placeholder="name" required></label><br>
+        <label>Email:    <input name="Email" placeholder="email" required></label><br>
+        <label>Edad: <input name="edad" placeholder="age" required></label><br>
+        <button aria-label="Enviar" onclick="myDialog.close()">Enviar</button>
+    </main>
+
+    <aside>
+        <h1>Video rapido de HTML</h1>
+        <iframe width="300" height="215" src="https://www.youtube.com/embed/mNbnV3aN3KA?si=eT0STL6UZGkX9H45" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </aside>
+<img src="https://gatosyrespeto.org/wp-content/uploads/2022/05/dibujo.jpg" width="400" height="400"  usemap="#image-map" alt="gato">
+<map name="image-map">
+    <area shape="rect" coords="-1,100,100,-1000" href="https://es.wikipedia.org/wiki/Historia_del_gato"target=_blank alt="Clickeable area">
+    <area shape="circle" coords="0,0,350" href="https://www.zooplus.es/magazine/gatos/salud-del-gato-y-cuidados/sobrepeso-en-gatos-causas-y-consecuencias"target=_blank alt="Another clickeable area">
+</map>
+<article>
+    <style>
+        table{background-color: dodgerblue;}
+        table{border: 2px solid blueviolet;
+            border-radius: 10px;}
+    </style>
+    <caption><strong>Tabla de horarios en Riwi</strong></caption>
+<table style="width:10%", border="1">
+    <tr>
+        <th>Horarios</th>
+        <th>Desarollo</th>
+        <th>Review</th>
+        <th>English</th>
+        <th>Salida</th>
+    </tr>
+    <tr>
+        <th>Lunes</th>
+        <td>6 Am</td>
+        <td>9 Am</td>
+        <td>11 Am</td>
+        <td>2 Pm</td>
+    </tr>
+    <tr>
+        <th>Martes</th>
+        <td>6 Am</td>
+        <td>9 Am</td>
+        <td>11 Am</td>
+        <td>2 Pm</td>       
+    </tr>
+        <tr>
+        <th>Miercoles</th>
+        <td>6 Am</td>
+        <td>9 Am</td>
+        <td>11 Am</td>
+        <td>2 Pm</td>       
+    </tr>
 </table>
-<nav>
-    <p>Acerca de </p>
-    <p>Contacto</p>
-</nav>
-</body>
-</html>
-
-<!-->#CONTACTO OTRA PAGINA MY BRODEL<!-->
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-<link rel="icon" href="https://cdn.pixabay.com/photo/2017/01/10/03/54/icon-1968244_1280.png" type="image/x-icon">
-</head>
-<body>
-    <h1>Emanuel Gaviria Cardona</h1>
-<h2>3127264706</h2>
+</article>
+<footer>
+<h2><strong>Listas</strong></h2>
+<ol>
+    <caption><strong>Temas para ver en:</strong></caption>
+    <li>Desarollo</li>
+    <ol>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+    </ol>
+    <li>Ingles</li>
+    <ul>
+        <li>Adjectives</li>
+        <li>Verbs</li>
+        <li>Pronunciation</li>
+    </ul>
+</ol>
+</footer>
 </body>
 </html>
 
